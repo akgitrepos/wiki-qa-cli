@@ -1,0 +1,32 @@
+# Wiki-QA CLI Configuration
+# Edit this file to customize settings, or use environment variables
+
+# Domain settings
+domain: "Computer Science"
+article_limit: 1000
+
+# Q&A strategy: vector | graph | hybrid
+qna_strategy: "hybrid"
+
+# Processing settings
+batch_size: 50
+concurrent_requests: 10
+
+# Feature flags
+cache_embeddings: true
+enable_citations: true
+
+# Neo4j configuration (use environment variables for credentials)
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+
+# Qdrant configuration
+qdrant:
+  url: "http://localhost:6333"
+
+# Ollama configuration
+ollama:
+  base_url: "http://localhost:11434"
+  embedding_model: "nomic-embed-text"
+  llm_model: "llama3.2"
